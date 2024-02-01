@@ -147,8 +147,10 @@ public class EndpointTests {
   @AfterClass
   public static void tearDownMongo() {
     if (mongod != null) {
-      mongod.stop();
-      mongodExe.stop();
+      // mongod.stop();
+      // mongodExe.stop();
+      mongod = null;
+      mongodExe = null;
     }
   }
 
